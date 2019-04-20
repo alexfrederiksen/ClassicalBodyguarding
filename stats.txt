@@ -1,0 +1,29 @@
+
+GHOST_EXPLORATION = 0.5
+GHOST_FOLLOW_REWARD = False
+
+Statistics over 1000 iterations 
+
+  Guard: 
+         average reward: -2.2785821826878405 
+         total reward:   -2278.5821826878387 
+
+  Hostile: 
+         average reward: -3.396996069244173 
+         total reward:   -3396.996069244172 
+
+
+GHOST_EXPLORATION = 0.5
+GHOST_FOLLOW_REWARD = True
+
+Statistics over 1000 iterations 
+
+  Guard: 
+         average reward: 3.411326168619246 
+         total reward:   3411.3261686192473 
+
+  Hostile: 
+         average reward: -6.226398822079126 
+         total reward:   -6226.39882207913 
+
+

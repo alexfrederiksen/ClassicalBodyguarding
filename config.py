@@ -1,0 +1,66 @@
+from enum import IntEnum
+
+RENDER_ENABLED = True
+
+GRID_W = 10
+GRID_H = 10
+SCREEN_W = 900
+SCREEN_H = 900
+
+CELL_W = SCREEN_W / GRID_W
+CELL_H = SCREEN_H / GRID_H
+
+TARGET_FPS = 60
+STEP_TIME = 0.01
+
+ITERATION_MAX = 2000
+
+GHOST_COUNT = 100
+GHOST_COUNT_INTERVAL = 20
+
+SUFFERING = 0
+
+MORTAL_EXPLORATION = 0.1 # unused
+GHOST_EXPLORATION = 1.0
+GHOST_FOLLOW_REWARD = True
+
+DELAYED_REWARD = True
+
+VIP_EPISODE = 100
+
+HOSTILE_CLOSEST_DST = 2.5
+HOSTILE_CLOSEST_DST2 = pow(HOSTILE_CLOSEST_DST, 2)
+
+GUARD_Q_FILE = "guard_q_table.dat"
+HOSTILE_Q_FILE = "hostile_q_table.dat"
+
+GRAPH_REWARDS = True
+MONITOR_AVG_DENSITY = 10
+
+# state variables
+class VIPState(IntEnum):
+	FROZEN = 0
+	AUTO = 1
+	MOUSE = 2
+
+VIP_STATE = VIPState.FROZEN
+RENDER_TEXT_ENABLED = False
+RENDER_GHOSTS_ENABLED = True
+
+def set_ghost_count(v):
+	global GHOST_COUNT
+
+	GHOST_COUNT = v
+	print(f"Set GHOST_COUNT to {v}.")
+
+def set_ghost_exploration(v):
+	global GHOST_EXPLORATION
+
+	GHOST_EXPLORATION = v
+
+def set_suffering(v):
+	global SUFFERING
+
+	SUFFERING = v
+	print(f"Set SUFERING to {v}.")
+
