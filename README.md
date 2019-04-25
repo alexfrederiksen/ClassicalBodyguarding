@@ -2,7 +2,7 @@
 This was my undergraduate research project under the UCF L.E.A.R.N. 2018 - 2019 apprenticeship.
 
 ## Poster
-![alt text](https://github.com/anotherAlex154/ClassicalBodyguarding/blob/master/research-poster.svg)
+![alt text](https://github.com/anotherAlex154/ClassicalBodyguarding/blob/master/research-poster.png)
 
 ## Prerequisites
 Make sure you have the following installed:
